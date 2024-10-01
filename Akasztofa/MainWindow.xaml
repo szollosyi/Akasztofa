@@ -1,0 +1,64 @@
+﻿<Window x:Class="Akasztofa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Akasztofa"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="Start" Click="JatekterInit"/>
+        </Menu>
+        <StackPanel Orientation="Horizontal" x:Name="stpBetuk" Grid.Row="1" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <Button Content="a" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="á" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="b" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="c" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="d" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="e" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="é" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="f" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="g" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="h" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="i" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="í" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="j" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="k" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="l" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="m" Width="50" Height="50" Click="TippClick"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <Button Content="n" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="o" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="ó" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="ö" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="ő" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="p" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="q" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="r" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="s" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="t" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="u" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="ú" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="ü" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="ű" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="v" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="w" Width="50" Height="50" Click="TippClick"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="4" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <Button Content="x" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="y" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="z" Width="50" Height="50" Click="TippClick"/>
+        </StackPanel>
+    </Grid>
+</Window>
