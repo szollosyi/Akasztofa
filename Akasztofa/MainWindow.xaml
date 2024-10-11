@@ -5,7 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Akasztofa"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Akasztófa" Height="450" Width="1200" Background="DarkRed">
+    <Window.Resources>
+        <Style TargetType="Menu">
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="47"/>
+            <Setter Property="Height" Value="47"/>
+            <Setter Property="Margin" Value="3"/>
+            <Setter Property="Padding" Value="3"/>
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
@@ -14,51 +28,58 @@
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="850"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
         <Menu>
-            <MenuItem Header="Start" Click="JatekterInit"/>
+            <MenuItem Header="Játék indítása" x:Name="miInditas" Click="JatekterInit"/>
         </Menu>
         <StackPanel Orientation="Horizontal" x:Name="stpBetuk" Grid.Row="1" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center"/>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center">
-            <Button Content="a" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="á" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="b" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="c" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="d" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="e" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="é" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="f" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="g" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="h" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="i" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="í" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="j" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="k" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="l" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="m" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="a" Click="TippClick"/>
+            <Button Content="á" Click="TippClick"/>
+            <Button Content="b" Click="TippClick"/>
+            <Button Content="c" Click="TippClick"/>
+            <Button Content="d" Click="TippClick"/>
+            <Button Content="e" Click="TippClick"/>
+            <Button Content="é" Click="TippClick"/>
+            <Button Content="f" Click="TippClick"/>
+            <Button Content="g" Click="TippClick"/>
+            <Button Content="h" Click="TippClick"/>
+            <Button Content="i" Click="TippClick"/>
+            <Button Content="í" Click="TippClick"/>
+            <Button Content="j" Click="TippClick"/>
+            <Button Content="k" Click="TippClick"/>
+            <Button Content="l" Click="TippClick"/>
+            <Button Content="m" Click="TippClick"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="3" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center">
-            <Button Content="n" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="o" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="ó" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="ö" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="ő" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="p" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="q" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="r" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="s" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="t" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="u" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="ú" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="ü" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="ű" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="v" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="w" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="n" Click="TippClick"/>
+            <Button Content="o" Click="TippClick"/>
+            <Button Content="ó" Click="TippClick"/>
+            <Button Content="ö" Click="TippClick"/>
+            <Button Content="ő" Click="TippClick"/>
+            <Button Content="p" Click="TippClick"/>
+            <Button Content="q" Click="TippClick"/>
+            <Button Content="r" Click="TippClick"/>
+            <Button Content="s" Click="TippClick"/>
+            <Button Content="t" Click="TippClick"/>
+            <Button Content="u" Click="TippClick"/>
+            <Button Content="ú" Click="TippClick"/>
+            <Button Content="ü" Click="TippClick"/>
+            <Button Content="ű" Click="TippClick"/>
+            <Button Content="v" Click="TippClick"/>
+            <Button Content="w" Click="TippClick"/>
         </StackPanel>
-        
+
         <StackPanel Orientation="Horizontal" Grid.Row="4" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center">
-            <Button Content="x" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="y" Width="50" Height="50" Click="TippClick"/>
-            <Button Content="z" Width="50" Height="50" Click="TippClick"/>
+            <Button Content="x" Click="TippClick"/>
+            <Button Content="y" Click="TippClick"/>
+            <Button Content="z" Click="TippClick"/>
         </StackPanel>
+        <Image x:Name="imgBito" Grid.RowSpan="5" Grid.Column="1"/>
     </Grid>
 </Window>
